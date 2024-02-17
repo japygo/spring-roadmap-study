@@ -8,6 +8,8 @@ management:
       enabled: true
     git:
       mode: full
+  server:
+    port: 8080
   endpoint:
     health:
 #      show-details: always
@@ -19,6 +21,7 @@ management:
       exposure:
         include: "*"
         exclude: "env,beans"
+      base-path: "/actuator"
 info:
   app:
     name: hello-actuator
